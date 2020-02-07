@@ -10,7 +10,7 @@ Implementación de JWS y JWE, leyendo las llaves desde archivos .pem con seriali
 
 Vamos a crear 2 clases una emisor(firma y encripta un mensaje) y otra receptor(desencripta y verifica un mensaje) 
 
-## JWS JSON Web Encryption RFC 7515(Algoritmo RS256 RSASSA-PKCS-v1_5 using SHA-256)
+## JWS JSON Web Signature RFC 7515(Algoritmo RS256 RSASSA-PKCS-v1_5 using SHA-256)
 
 El resultado puede tener una serialización 
 
