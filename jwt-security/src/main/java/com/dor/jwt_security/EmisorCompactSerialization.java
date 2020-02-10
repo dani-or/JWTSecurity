@@ -19,7 +19,7 @@ import com.nimbusds.jose.jwk.RSAKey;
 import com.nimbusds.jwt.JWTClaimsSet;
 import com.nimbusds.jwt.SignedJWT;
 
-public class emisor {
+public class EmisorCompactSerialization {
 
     public static void main(String[] args) {
         // 1. leer llave privada del emisor
@@ -30,13 +30,13 @@ public class emisor {
 
 
         try {
-            String privateNequiKeyString;
-            privateNequiKeyString = new String(Files.readAllBytes(Paths.get(
+            String privateEmisorKeyString;
+            privateEmisorKeyString = new String(Files.readAllBytes(Paths.get(
                     "/home/danosori/Documents/externos/REDEBAN/myKey/emisorKey/emisorprivate.pem")));
 
-            System.out.println(privateNequiKeyString);
+            System.out.println(privateEmisorKeyString);
             RSAKey emisor = (RSAKey) RSAKey
-                    .parseFromPEMEncodedObjects(privateNequiKeyString);
+                    .parseFromPEMEncodedObjects(privateEmisorKeyString);
 
             System.out.println(emisor.getKeyType());
             System.out.println(emisor.isPrivate());
