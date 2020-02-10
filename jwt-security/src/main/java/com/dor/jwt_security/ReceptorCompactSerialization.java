@@ -15,13 +15,10 @@ import com.nimbusds.jwt.SignedJWT;
 public class ReceptorCompactSerialization {
 
     public static void main(String[] args) {
-        // 1. leer  publico de redeban
-        // 2. generar llaves nequis tomarlas de un archivo TODO
-        // 3. firmar
-        // 4. flat del firmado
-        // 5. encriptar el flat en string
-        // 6. construir flat del encriptado
-        // 7 .Construir otra opción
+        // 1. leer llaves publicas del emisor
+        // 2. leer llaves privadas del receptor
+        // 3. desencriptar el mensaje 
+        // 4. verificar el mensaje
 
         try {
             String emisorPublicKey;
