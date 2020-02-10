@@ -12,7 +12,7 @@ import com.nimbusds.jose.jwk.RSAKey;
 import com.nimbusds.jwt.EncryptedJWT;
 import com.nimbusds.jwt.SignedJWT;
 
-public class receptor {
+public class ReceptorCompactSerialization {
 
     public static void main(String[] args) {
         // 1. leer  publico de redeban
